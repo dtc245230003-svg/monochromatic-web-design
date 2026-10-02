@@ -1,0 +1,89 @@
+/* BẢNG MÀU ĐƠN TÔNG - MONOCHROMATIC PALETTE */
+:root {
+  --color-lvl-1: #00ADEE; /* Primary Logo & Badge ON SALE */
+  --color-lvl-2: #00B2EF; /* Badge PREVIEW */
+  --color-lvl-4: #00BFF2; /* Header Background */
+  --color-lvl-7: #8DD7F7; /* Main Content Background */
+  --color-lvl-9: #C6E9FA; /* Footer Background */
+  --text-dark: #111111;   /* Màu chữ đen theo yêu cầu */
+}
+
+/* Quy tắc chung */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* 1. Header (Level 4 Background) */
+.header {
+  background-color: var(--color-lvl-4);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--color-lvl-1);
+  background: #ffffff;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+/* 2. Badges (Level 1 & Level 2) */
+.products-section {
+  padding: 30px 20px;
+  display: flex;
+  gap: 20px;
+  background-color: #f9f9f9;
+}
+
+.product-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.badge-sale {
+  background-color: var(--color-lvl-1);
+  color: #ffffff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.badge-preview {
+  background-color: var(--color-lvl-2);
+  color: #ffffff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* 3. Main Content (Level 7 Background) */
+.main-content {
+  background-color: var(--color-lvl-7);
+  padding: 40px 20px;
+}
+
+/* 4. Footer (Level 9 Background) */
+.footer {
+  background-color: var(--color-lvl-9);
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
